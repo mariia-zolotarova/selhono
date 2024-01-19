@@ -1,0 +1,31 @@
+// // & == .header
+.header {
+    padding-top: 54rem;
+    padding-bottom: 66rem;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__nav-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+    }
+
+    &__nav-link {
+        color: var(--color-dark-grey-29);
+        cursor: pointer;
+
+        &:hover {
+            color: var(--color-teracot);
+        }
+
+        &--active {
+            color: var(--color-teracot);
+        }
+    }
+}

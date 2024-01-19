@@ -1,0 +1,28 @@
+// Variables
+@import './variables/media';
+@import './variables/color';
+@import './variables/fonts';
+
+// Global Style
+@import './global/resets.scss';
+@import './global/global.scss';
+// Global Style End
+
+// Common section
+@import './common/header.scss';
+@import './common/footer.scss';
+@import './common/form.scss';
+// Common section End
+
+// Components
+@import './components/button.scss';
+// Components End
+
+// Pages Style
+@import './pages/blog.scss';
+@import './pages/home.scss';
+@import './pages/contact.scss';
+@import './pages/pages.scss';
+@import './pages/project.scss';
+@import './pages/services.scss';
+// Pages Style End

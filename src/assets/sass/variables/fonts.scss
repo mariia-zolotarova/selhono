@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Serif+Text&family=Inter:wght@500;600&family=Jost:wght@300;400;500;600;700&display=swap');
+
+
+
+$serif-display-fonts: 'DM Serif Display', serif;
+$serif-text-fonts: 'DM Serif Text', serif;
+$inter-fonts: 'Inter', sans-serif;
+$jost-fonts: 'Jost', sans-serif;
+
+
+:root {
+    --inter-fonts: 'Inter', sans-serif;
+    --serif-display-fonts: 'DM Serif Display', serif;
+    --serif-text-fonts: 'DM Serif Text', serif;
+    --jost-fonts: 'Jost', sans-serif;
+
+
+    //Text Fonts
+
+    --home-text-font: 400 22rem/normal var(--jost-fonts);
+    --home-title-font: 400 25rem/normal var(--serif-display-fonts);
+
+
+    //Heading Fonts
+    --heading-title-font: 400 65rem/normal var(--serif-display-fonts);
+    --heading-text-font: 500 22rem/normal var(--jost-fonts);
+
+    //subtract Fonts
+    --subtract-title-font: 400 55rem/normal var(--serif-display-fonts);
+
+    //Button Fonts
+    --button-font: 600 18rem/normal var(--inter-fonts);
+
+
+
+}

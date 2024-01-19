@@ -1,0 +1,120 @@
+.heading {
+    &__container {
+        margin-top: 96rem;
+        margin-bottom: 95rem;
+        max-width: 1210rem;
+        min-height: 758rem;
+        display: flex;
+        flex-direction: column;
+        background-image: url(../../img/home/heading-img.jpg);
+    }
+
+    &__title {
+        margin-top: 73rem;
+        margin-left: 25rem;
+        max-width: 690rem;
+        // height: 200rem;
+        color: var(--color-white);
+        font: var(--heading-title-font);
+    }
+
+    &__text {
+        margin-top: 9rem;
+        margin-left: 25rem;
+        max-width: 470rem;
+        color: var(--color-white);
+        margin-bottom: 28rem;
+        font: var(--heading-text-font);
+    }
+
+    &__button {
+        margin-left: 25rem;
+    }
+}
+
+.work {
+    &__container {
+        display: flex;
+        flex-direction: row;
+        max-width: 1158rem;
+        justify-content: space-between;
+        margin-bottom: 154rem;
+    }
+
+    &__subcontent {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        max-width: 358rem;
+
+        &-title {
+            margin-bottom: 20rem;
+            font: var(--home-title-font);
+            color: var(--color-dark-grey-29);
+        }
+
+        &-text {
+            margin-bottom: 52rem;
+            font: var(--home-text-font);
+            color: var(--color-dark-grey-4D5);
+        }
+
+        &-more {
+            font: var(--button-font);
+            color: var(--color-dark-grey-4D5);
+        }
+    }
+}
+
+.subtract {
+    &__container {
+        max-width: 1210rem;
+        height: 700rem;
+        background-image: url(../../img/home/subtract.png);
+        margin-bottom: 194rem;
+    }
+
+    &__title {
+        padding: 142rem 0 20rem 25rem;
+        // max-width: 368rem; ???? Right, but better 396rem
+        max-width: 396rem;
+        color: var(--color-white);
+        font: var(--subtract-title-font);
+        letter-spacing: 0.22px;
+        line-height: 125%;
+    }
+
+    &__text {
+        margin-left: 25rem;
+        margin-bottom: 20rem;
+        max-width: 470rem;
+        color: var(--color-white);
+        margin-bottom: 28rem;
+        font: var(--heading-text-font);
+        letter-spacing: 0.22px;
+        line-height: 150%;
+    }
+
+    &__call {
+        display: flex;
+        flex-direction: row;
+        color: var(--color-white);
+        margin-left: 25rem;
+        margin-bottom: 47rem;
+
+        &-icon {
+            width: 93rem;
+            margin-right: 15rem;
+        }
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__button {
+        margin-left: 25rem;
+    }
+}

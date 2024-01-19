@@ -1,0 +1,38 @@
+html {
+    font-size: 1px;
+}
+
+body {
+    font: var(--home-text-font);
+}
+
+.container {
+    max-width: 1210rem;
+    margin: 0 auto;
+}
+
+.logo {
+    max-width: 227px;
+    height: 50px;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+// .hover-link-animation {
+//     cursor: pointer;
+//     transition: transform 0.3s ease-in-out;
+//     display: block;
+
+//     @media (max-width:tablet) {
+//         transition: none;
+
+//         &:hover {
+//             transform: scale(1.1);
+//         }
+//     }
+
+// }
