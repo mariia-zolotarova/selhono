@@ -28,6 +28,14 @@ $jost-fonts: 'Jost', sans-serif;
     //subtract Fonts
     --subtract-title-font: 400 55rem/normal var(--serif-display-fonts);
 
+    //testimonial fonts
+    --testimonial-title-font: 400 50rem/normal var(--serif-display-fonts);
+    --testimonial-place-font: 400 18rem/normal var(--serif-display-fonts);
+
+    //follow fonts
+    --follow-title-font: 400 60rem/normal var(--serif-display-fonts);
+    --follow-text-font: 400 28rem/normal var(--jost-fonts);
+
     //Button Fonts
     --button-font: 600 18rem/normal var(--inter-fonts);
 

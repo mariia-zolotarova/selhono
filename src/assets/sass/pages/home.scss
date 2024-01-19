@@ -118,3 +118,115 @@
         margin-left: 25rem;
     }
 }
+
+.testimonial {
+    &__container {
+        max-width: 1210rem;
+        height: 679rem;
+        background-color: var(--color-biegeD8);
+        border-radius: 65rem;
+        margin-bottom: 188rem;
+    }
+
+    &__title {
+        padding: 88rem 332rem 38rem 332rem;
+        color: var(--color-white);
+        font: var(--testimonial-title-font);
+        text-align: center;
+    }
+
+    &__frame {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 30rem;
+    }
+
+    &__person {
+        padding: 53rem 37rem;
+        max-width: 370rem;
+        background-color: var(--color-white);
+        border-radius: 25rem;
+
+
+        &-img {
+            width: 77rem;
+        }
+
+        &-name {
+            font: var(--home-title-font);
+            color: var(--color-dark-grey-29);
+        }
+
+        &-place {
+            font: var(--testimonial-place-font);
+            color: var(--color-dark-grey-4D5);
+        }
+    }
+
+    &__text {
+        color: var(--color-dark-grey-4D5);
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: row;
+        gap: 23rem;
+        margin-bottom: 25rem;
+    }
+}
+
+.companies {
+    &__container {
+        display: flex;
+        flex-direction: row;
+        height: 100rem;
+        margin-bottom: 202rem;
+    }
+
+    &__img {
+
+        &-first {
+            max-width: 300rem;
+            padding: 25rem 49rem;
+        }
+
+        &-second {
+            max-width: 364rem;
+            padding: 5rem;
+        }
+
+        &-third {
+            max-width: 362rem;
+            padding: 10rem;
+        }
+
+        &-fourth {
+            max-width: 90rem;
+            padding: 10rem;
+        }
+    }
+}
+
+.follow {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 114rem;
+        max-width: 736rem;
+        text-align: center;
+    }
+
+    &__title {
+        color: var(--color-dark-grey-29);
+        font: var(--follow-title-font);
+    }
+
+    &__text {
+        font: var(--follow-text-font);
+        color: var(--color-dark-grey-4D5);
+        text-align: center;
+        line-height: 150%;
+        letter-spacing: 0.28px;
+    }
+}
