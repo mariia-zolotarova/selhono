@@ -1,4 +1,4 @@
-.button-biege {
+.button-gray {
     display: flex;
     border: none;
     border-radius: 18rem;
@@ -19,5 +19,29 @@
     &::after {
         content: "→";
         color: var(--color-biegeCD);
+    }
+}
+
+.button-biege {
+    display: flex;
+    border: none;
+    border-radius: 18rem;
+    width: fit-content;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    padding: 26rem 37rem;
+    font: var(--button-font);
+    color: var(--color-white);
+    background-color: var(--color-biegeCD);
+    transition: background-color 0.5s;
+    gap: 10rem;
+
+    &::after {
+        content: "→";
+        color: var(--color-dark-grey-29);
     }
 }

@@ -1,0 +1,35 @@
+.banner {
+    background-image: url(../../img/about/banner.jpg);
+    height: 356rem;
+    margin-bottom: 200rem;
+    position: relative;
+
+    &__container {
+        padding: 41rem 152rem;
+        background-color: var(--color-white);
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+        transform: translateX(50%);
+        border-radius: 37px 37px 0px 0px;
+        text-align: center;
+    }
+
+    &__title {
+        font: var(--testimonial-title-font);
+        color: var(--color-dark-grey-29);
+    }
+
+    &__text {
+        font: var(--heading-text-font);
+        color: var(--color-dark-grey-4D5);
+    }
+}
+
+
+.quotes {
+    &__container {
+        display: flex;
+        flex-direction: row;
+    }
+}
