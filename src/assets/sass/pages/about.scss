@@ -31,5 +31,233 @@
     &__container {
         display: flex;
         flex-direction: row;
+        position: relative;
+        width: 875rem;
+        height: 428rem;
+        margin-bottom: 200rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__pattern {
+        position: absolute;
+    }
+
+    &__title {
+        font: var(--counter-number-font);
+        color: var(--color-dark-grey-29);
+    }
+
+    &__text {
+        font: var(--about-text-font);
+        color: var(--color-dark-grey-29);
+        font-style: italic;
+        line-height: 125%;
+        letter-spacing: 0.7px;
+        padding: 27rem 62rem 34rem 62rem;
+    }
+
+    &__author {
+        font: var(--about-author-font);
+        color: var(--color-dark-grey-4D5);
+    }
+}
+
+.concept {
+    &__container {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 150rem;
+        gap: 41rem;
+    }
+
+    &__content {
+        max-width: 500rem;
+    }
+
+    &__title {
+        font: var(--follow-title-font);
+        color: var(--color-dark-grey-29);
+        margin-bottom: 23rem;
+    }
+
+    &__text {
+        color: var(--color-dark-grey-4D5);
+        font: var(-follow-text-font);
+        margin-bottom: 41rem;
+    }
+}
+
+.result {
+    &__container {
+        display: flex;
+        flex-direction: row;
+        gap: 90rem;
+        margin-bottom: 173rem;
+    }
+
+    &__content {
+        max-width: 500rem;
+    }
+
+    &__title {
+        font: var(--follow-title-font);
+        color: var(--color-dark-grey-29);
+        margin-bottom: 23rem;
+    }
+
+    &__text {
+        color: var(--color-dark-grey-4D5);
+        font: var(-follow-text-font);
+        margin-bottom: 41rem;
+    }
+}
+
+.team {
+    background-color: var(--color-light-grey-F4);
+    padding: 185rem 360rem;
+    margin-bottom: 213rem;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        display: flex;
+        text-align: center;
+        margin-bottom: 40rem;
+        font: var(--follow-title-font);
+        max-width: 547rem;
+    }
+
+    &__people {
+        display: flex;
+        flex-direction: row;
+        gap: 22rem;
+    }
+
+    &__flip-img {
+        border-radius: 30rem;
+    }
+
+    &__flip-card {
+        background-color: transparent;
+        width: 284rem;
+        height: 433rem;
+        // border: 1px solid var(--color-light-grey-CE);
+        // border-radius: 25rem;
+        perspective: 1000px;
+        /* Remove this if you don't want the 3D effect */
+    }
+
+    /* This container is needed to position the front and back side */
+    &__flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
+
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    &__flip-card:hover &__flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    /* Position the front and back side */
+    &__flip-card-front,
+    &__flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+
+    }
+
+    /* Style the front side (fallback if image is missing) */
+    &__flip-card-front {
+        background-color: var(--color-dark-grey-29);
+        color: var(--color-white);
+        border-radius: 30rem;
+    }
+
+    /* Style the back side */
+    &__flip-card-back {
+        background-color: var(--color-white);
+        color: var(--color-dark-grey-29);
+        transform: rotateY(180deg);
+        border-radius: 25rem;
+        padding: 70rem 28rem;
+    }
+
+
+    &__flip-social {
+        padding: 45rem 40rem 65rem 40rem;
+    }
+
+    &__flip-name {
+        font: var(--about-author-font);
+        color: var(--color-dark-grey-29);
+    }
+
+    &__flip-info,
+    &__flip-phone,
+    &__flip-mail {
+        font: var(--about-place-font);
+        color: var(--color-dark-grey-4D5);
+    }
+
+}
+
+.mail {
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 202rem 135rem 202rem;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        &-row {
+            display: flex;
+            flex-direction: row;
+            gap: 40rem;
+            width: 100%;
+            margin-bottom: 57rem;
+        }
+    }
+
+    &__name {
+        width: 50%;
+
+    }
+
+    &__email {
+        width: 50%;
+    }
+
+    &__text {
+
+        &::placeholder {
+            margin-bottom: 130rem;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        padding-bottom: 13rem;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid var(--color-black-00);
     }
 }

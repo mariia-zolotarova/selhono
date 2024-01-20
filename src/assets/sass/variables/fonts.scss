@@ -43,6 +43,10 @@ $jost-fonts: 'Jost', sans-serif;
     //Blog Font
     --blog-text-font: 400 16rem/normal var(--jost-fonts);
 
+    --about-text-font: 400 35rem/normal var(--serif-display-fonts);
+    --about-author-font: 400 25rem/normal var(--jost-fonts);
+    --about-place-font: 400 18rem/normal var(--jost-fonts);
+
     //Button Fonts
     --button-font: 600 18rem/normal var(--inter-fonts);
 
