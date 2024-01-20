@@ -12,11 +12,12 @@
     padding: 26rem 49rem;
     font: var(--button-font);
     color: var(--color-white);
-    background-color: var(--color-biegeCD);
+    background-color: var(--color-dark-grey-29);
     transition: background-color 0.5s;
     gap: 10rem;
 
     &::after {
         content: "→";
+        color: var(--color-biegeCD);
     }
 }
