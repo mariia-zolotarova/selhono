@@ -215,6 +215,12 @@
 
 .mail {
 
+    &__title {
+        font: var(--follow-title-font);
+        text-align: center;
+        margin-bottom: 77rem;
+    }
+
     &__container {
         display: flex;
         flex-direction: column;
@@ -245,12 +251,10 @@
         width: 50%;
     }
 
-    &__text {
-
-        &::placeholder {
-            margin-bottom: 130rem;
-        }
+    &__text ::placeholder {
+        margin-bottom: 130rem;
     }
+
 
     &__input {
         width: 100%;
