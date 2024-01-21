@@ -1,0 +1,40 @@
+.content {
+    &__container {
+        display: flex;
+        flex-direction: row;
+        gap: 97rem;
+        width: 100%;
+        margin-bottom: 150rem;
+    }
+
+    &__title {
+        width: 40%;
+
+        &-item {
+            font: var(--follow-title-font);
+            color: var(--color-dark-grey-29);
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        gap: 28rem;
+
+        &-paragraph {
+            font: var(--follow-text-font);
+            color: var(--color-dark-grey-4D5);
+
+            &--biege {
+                color: var(--color-biegeCD);
+            }
+        }
+    }
+}
+
+.image {
+    &__container {
+        margin: 0 360rem 150rem 360rem;
+    }
+}
