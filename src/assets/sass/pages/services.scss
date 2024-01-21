@@ -58,6 +58,7 @@
         flex-direction: column;
         background-color: var(--color-light-grey-F4);
         border-radius: 70rem;
+        margin-bottom: 200rem;
     }
 
     &__heading {
@@ -103,5 +104,22 @@
             font: var(--follow-text-font);
             color: var(--color-dark-grey-4D5);
         }
+    }
+
+    &__icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__number {
+        font: var(--services-number-font);
+        color: var(--color-white);
+    }
+
+    &__icon {
+        width: 92rem;
+        height: 92rem;
     }
 }

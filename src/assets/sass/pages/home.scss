@@ -298,6 +298,7 @@
         flex-direction: row;
         justify-content: space-between;
         text-align: center;
+        gap: 44rem;
     }
 
     &__item {
@@ -372,8 +373,6 @@
             font: var(--blog-text-font);
             color: var(--color-dark-grey-4D5);
         }
-
-
 
         &-more--img {
             width: 70rem;
