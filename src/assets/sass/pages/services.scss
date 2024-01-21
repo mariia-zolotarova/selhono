@@ -1,0 +1,107 @@
+.banner__services {
+    background-image: url(../../img/services/banner-services.jpg);
+}
+
+.services {
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 112rem;
+    }
+
+    &__item {
+        width: 33%;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        padding: 83rem 21rem;
+        text-align: center;
+        margin-bottom: 88rem;
+
+        &:hover {
+            background-color: var(--color-light-grey-F4);
+            border-radius: 50rem;
+        }
+    }
+
+    &__title {
+        font: var(--home-title-font);
+        color: var(--color-dark-grey-29);
+        margin-bottom: 20rem;
+    }
+
+    &__text {
+        font: var(--follow-text-font);
+        color: var(--color-dark-grey-4D5);
+        margin-bottom: 52rem;
+    }
+
+    &__more {
+        font: var(--services-more-font);
+        color: var(--color-dark-grey-4D5);
+
+        &::after {
+            content: " →";
+            font: var(--follow-text-font);
+            color: var(--color-biegeCD);
+        }
+    }
+}
+
+.details {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color-light-grey-F4);
+        border-radius: 70rem;
+    }
+
+    &__heading {
+        text-align: center;
+        padding: 160rem 198rem 100rem 198rem;
+
+        &-title {
+            font: var(--testimonial-title-font);
+            color: var(--color-dark-grey-29);
+        }
+
+        &-text {
+            font: var(--heading-text-font);
+            color: var(--color-dark-grey-4D5);
+        }
+    }
+
+    &__work {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 51rem;
+        padding: 0 116rem 70rem 116rem;
+
+        &:last-child {
+            padding-bottom: 160rem;
+        }
+
+        &-img {
+            width: 50%;
+        }
+    }
+
+    &__content {
+        width: 50%;
+
+        &-title {
+            font: var(--about-text-font);
+            color: var(--color-dark-grey-29);
+        }
+
+        &-text {
+            font: var(--follow-text-font);
+            color: var(--color-dark-grey-4D5);
+        }
+    }
+}
