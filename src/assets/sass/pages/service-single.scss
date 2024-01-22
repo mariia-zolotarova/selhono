@@ -35,6 +35,56 @@
 
 .image {
     &__container {
-        margin: 0 360rem 150rem 360rem;
+        max-width: 1200rem;
+        margin-bottom: 150rem;
+    }
+}
+
+.points {
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 150rem;
+    }
+
+    &__interior {
+
+        margin-right: 83rem;
+
+        &::before {
+            content: "";
+            position: absolute;
+            right: 50%;
+            top: 50rem;
+            height: 249rem;
+            width: 50%;
+            border-right: 1px solid var(--color-light-grey-CE);
+        }
+    }
+
+    &__art {
+        margin-left: 83rem;
+    }
+
+    &__interior-title {
+        font: var(--follow-title-font);
+        color: var(--color-dark-grey-29);
+        margin-bottom: 23rem;
+    }
+
+    &__interior-list--item {
+        list-style: decimal;
+        margin-bottom: 23rem;
+
+        font: var(--follow-text-font);
+        color: var(--color-dark-grey-4D5);
+
+        &::marker {
+            color: var(--color-biegeCD);
+            font: var(--service-number-font);
+        }
     }
 }
