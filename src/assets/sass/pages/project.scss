@@ -49,7 +49,7 @@
     }
 }
 
-.grid-container {
+.grid__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -70,6 +70,8 @@
 
 .grid__bedroom-first {
     grid-area: grid__bedroom-first;
+    display: flex;
+    flex-direction: column;
 }
 
 .grid__bedroom-second {
@@ -98,4 +100,26 @@
 
 .grid__bedroom-eighth {
     grid-area: grid__bedroom-eighth;
+}
+
+.grid__bedroom {
+    &-img {
+        margin-bottom: 28rem;
+    }
+
+    &-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &-title {
+        color: var(--color-dark-grey-29);
+        font: var(--home-title-font);
+    }
+
+    &-text {
+        color: var(--color-dark-grey-4D5);
+        font: var(--home-text-font);
+    }
 }
