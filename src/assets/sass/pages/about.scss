@@ -218,12 +218,10 @@
         }
     }
 
-    &__name {
-        width: 50%;
-
-    }
-
-    &__email {
+    &__name,
+    &__email,
+    &__site,
+    &__phone {
         width: 50%;
     }
 

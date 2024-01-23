@@ -177,10 +177,9 @@
         margin-bottom: 35rem;
         line-height: 150%;
         letter-spacing: 0.22px;
-
-        :first-child {
-            margin-bottom: 40rem;
-        }
+        display: flex;
+        flex-direction: column;
+        gap: 35rem;
     }
 
     &__quotes {
@@ -212,5 +211,73 @@
             line-height: 125%;
             letter-spacing: 0.5px;
         }
+    }
+
+    &__text-list {
+        display: flex;
+        flex-direction: column;
+        gap: 35rem;
+        padding-left: 20rem;
+
+        &--item {
+            list-style-type: decimal;
+            padding: 0 66rem 0 14rem;
+
+            &::marker {
+                color: var(--color-biegeCD);
+                font: var(--follow-text-font);
+            }
+        }
+
+    }
+
+    &__social {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    &__tags {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__icons {
+        display: flex;
+        flex-direction: row;
+        gap: 20rem;
+    }
+
+    &__social {
+        padding: 44rem 0 44rem 0;
+        border-top: 1rem solid var(--color-light-grey-F4);
+        border-bottom: 1rem solid var(--color-light-grey-F4);
+        margin-bottom: 93rem;
+    }
+
+    &__social-row {
+        display: flex;
+        flex-direction: row;
+        gap: 54rem;
+    }
+
+    &__tags-title {
+        color: var(--color-black-00);
+        font: var(--blog-sidebar-font);
+        margin-right: 21rem;
+    }
+
+    &__reply {
+        &-title {
+            color: var(--color-dark-grey-29);
+            font: var(--blog-quotes-text-font);
+            margin-bottom: 36rem;
+        }
+    }
+
+    &__button {
+        margin-top: 63rem;
+        margin-bottom: 200rem;
     }
 }
