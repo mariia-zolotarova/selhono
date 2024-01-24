@@ -1,0 +1,21 @@
+.banner__pricing {
+    background-image: url(../../img/pricing/banner-pricing.jpg);
+}
+
+.pricing {
+    &__container {
+        display: flex;
+        flex-direction: row;
+        gap: 48rem;
+        justify-content: center;
+        margin-bottom: 150rem;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 28rem;
+        text-align: center;
+        align-items: center;
+    }
+}

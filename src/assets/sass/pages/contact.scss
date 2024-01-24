@@ -1,0 +1,80 @@
+.banner__contact {
+    background-image: url(../../img/contact/banner-contact.jpg);
+}
+
+.contact-us {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 80rem;
+        margin-bottom: 139rem;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__title-item {
+        color: var(--color-dark-grey-29);
+        font: var(--testimonial-title-font);
+        max-width: 683rem;
+        text-align: center;
+    }
+
+    &__text {
+        color: var(--color-dark-grey-4D5);
+        font: var(--service-number-font);
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: row;
+        gap: 50rem;
+        width: 100%;
+        align-items: center;
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        padding: 76rem 32rem;
+        background-color: var(--color-light-grey-F4);
+        border-radius: 50px;
+        max-width: 349rem;
+        width: 30%;
+    }
+
+    &__details-row {
+        display: flex;
+        flex-direction: row;
+        gap: 10rem;
+        align-items: center;
+        margin-bottom: 30rem;
+    }
+
+    &__social-row {
+        display: flex;
+        flex-direction: row;
+        gap: 35rem;
+        margin-top: 47rem;
+    }
+
+    &__form {
+        width: 70%;
+    }
+
+    &__button {
+        margin-top: 58rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.map {
+    &__frame {
+        filter: grayscale(90%);
+        border-radius: 50rem;
+        margin-bottom: 200rem;
+    }
+}
