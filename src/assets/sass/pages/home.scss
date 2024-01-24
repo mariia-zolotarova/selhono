@@ -1,4 +1,5 @@
 .heading {
+
     &__container {
         margin-top: 57rem;
         margin-bottom: 200rem;
@@ -8,6 +9,11 @@
         flex-direction: column;
         background-image: url(../../img/home/heading-img.jpg);
         border-radius: 55rem;
+
+        @media (max-width: $tablet) {
+            align-items: center;
+            text-align: center;
+        }
     }
 
     &__title {
@@ -17,6 +23,10 @@
         // height: 200rem;
         color: var(--color-dark-grey-29);
         font: var(--heading-title-font);
+
+        @media (max-width: $tablet) {
+            margin-left: 0;
+        }
     }
 
     &__text {
@@ -24,10 +34,18 @@
         max-width: 433rem;
         color: var(--color-dark-grey-4D5);
         font: var(--heading-text-font);
+
+        @media (max-width: $tablet) {
+            margin-left: 0;
+        }
     }
 
     &__button {
         margin-left: 52rem;
+
+        @media (max-width: $tablet) {
+            margin-left: 0;
+        }
     }
 }
 
@@ -38,7 +56,14 @@
         max-width: 1158rem;
         justify-content: space-between;
         margin-bottom: 200rem;
+
+        @media (max-width: $tablet) {
+            flex-direction: column;
+            align-items: center;
+            gap: 40rem;
+        }
     }
+
 
     &__subcontent {
         display: flex;
@@ -71,13 +96,23 @@
         flex-direction: row;
         margin-bottom: 194rem;
         gap: 75rem;
+
+        @media (max-width: $tablet) {
+            flex-direction: column;
+            align-items: center;
+            gap: 40rem;
+            position: relative;
+        }
     }
 
-    // &__container-info {
-    //     // max-width: 1210rem;
-    //     // height: 700rem;
+    &__container-info {
 
-    // }
+        // max-width: 1210rem;
+        // height: 700rem;
+        @media (max-width: $tablet) {
+            margin-top: 700rem;
+        }
+    }
 
     &__title {
         padding: 43rem 0 33rem 0;
@@ -123,30 +158,54 @@
 
     &__container-img {
         max-width: 653rem;
+
+        @media (max-width: $tablet) {
+            width: 100%;
+            position: absolute;
+
+        }
     }
 }
 
 .testimonial {
     &__container {
-        max-width: 1199rem;
-        height: 679rem;
+        // max-width: 1199rem;
+        // height: 679rem;
+        padding: 88rem 25rem;
         background-color: var(--color-light-grey-F4);
         border-radius: 65rem;
         margin-bottom: 188rem;
+
+        @media (max-width: $tablet) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
     }
 
     &__title {
-        padding: 88rem 332rem 38rem 332rem;
+        padding: 0 332rem 38rem 332rem;
         color: var(--color-dark-grey-29);
         font: var(--testimonial-title-font);
         text-align: center;
+
+        @media (max-width: $tablet) {
+            padding: 0 0 40rem 0;
+        }
     }
 
     &__frame {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin: 0 30rem;
+        // margin: 0 30rem;
+        gap: 30rem;
+
+        @media (max-width: $tablet) {
+            flex-direction: column;
+
+        }
     }
 
     &__person {
@@ -190,28 +249,54 @@
         justify-content: space-between;
         align-items: center;
         margin-bottom: 202rem;
+
+        @media (max-width: $tablet) {
+            flex-wrap: wrap;
+
+        }
+
     }
 
     &__img {
 
         &-first {
             max-width: 131rem;
+
+            @media (max-width: $tablet) {
+                max-width: 61rem;
+            }
         }
 
         &-second {
             max-width: 102rem;
+
+            @media (max-width: $tablet) {
+                max-width: 32rem;
+            }
         }
 
         &-third {
             max-width: 163rem;
+
+            @media (max-width: $tablet) {
+                max-width: 93rem;
+            }
         }
 
         &-fourth {
             max-width: 144rem;
+
+            @media (max-width: $tablet) {
+                max-width: 74rem;
+            }
         }
 
         &-fifth {
-            max-width: 116rem;
+            max-width: 96rem;
+
+            @media (max-width: $tablet) {
+                max-width: 66rem;
+            }
         }
     }
 }
@@ -248,7 +333,12 @@
         width: 100%;
         flex-wrap: wrap;
         margin-bottom: 200rem;
-        // gap: 104rem;
+
+        @media (max-width: $tablet) {
+            width: 95%;
+            margin-bottom: 50rem;
+            justify-content: center;
+        }
     }
 
     &__card {
@@ -256,13 +346,26 @@
         flex-direction: column;
         max-width: 522rem;
 
+
+
         &:first-child {
             margin-right: 104rem;
             margin-bottom: 56rem;
+
+            @media (max-width: $tablet) {
+                margin-right: 0;
+                margin-bottom: 20rem;
+            }
         }
 
         &:nth-child(3) {
             margin-right: 104rem;
+
+            @media (max-width: $tablet) {
+                margin-right: 0;
+                margin-bottom: 20rem;
+                margin-top: 20rem;
+            }
         }
 
         &-info {
@@ -293,12 +396,22 @@
     padding: 151rem 419rem;
     margin-bottom: 200rem;
 
+    @media (max-width: $tablet) {
+        padding: 50rem 0;
+        margin-bottom: 50rem;
+    }
+
     &__container {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         text-align: center;
         gap: 44rem;
+
+        @media (max-width: $tablet) {
+            flex-direction: column;
+
+        }
     }
 
     &__item {
@@ -311,6 +424,11 @@
             height: 130rem;
             background-color: var(--color-biegeCD);
             margin-top: 18rem;
+
+            @media (max-width: $tablet) {
+                display: none;
+
+            }
         }
 
         &-number {
@@ -332,6 +450,11 @@
         gap: 27rem;
         flex-wrap: wrap;
         margin-bottom: 200rem;
+
+        @media (max-width: $tablet) {
+            justify-content: center;
+            margin-bottom: 50rem;
+        }
     }
 
     &__item {
@@ -392,6 +515,12 @@
         align-items: center;
         border-radius: 70rem;
         margin-bottom: 200rem;
+        text-align: center;
+
+        @media (max-width: $tablet) {
+            padding: 50rem 0;
+            margin-bottom: 0;
+        }
     }
 
     &__title {

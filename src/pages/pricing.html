@@ -16,7 +16,7 @@
 
         <header class="header">
             <div class="container header__container">
-                <img class="logo" src="@@webRoot/img/header/header-logo.png" alt="logo">
+                <img class="header__logo logo" src="@@webRoot/img/header/header-logo.png" alt="logo">
                 <nav class="header__nav">
                     <ul class="header__nav-row">
                         <li class="header__nav-item  header__nav-link--active">
@@ -40,6 +40,35 @@
                         <li class="header__nav-item">
                             <img class="header__nav-icon" src="@@webRoot/img/header/header-search.svg" alt=""
                                 width="20rem">
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header__hamburger" onclick="toggleMenu()">
+                    <span class="header__span"></span>
+                    <span class="header__span"></span>
+                    <span class="header__span"></span>
+                </div>
+
+                <nav class="header__mobile" id="mobile-menu">
+                    <ul class="header__mobile-row ">
+                        <li class="header__mobile-item">
+                            <a class="header__mobile-link" href="/">Home</a>
+                        </li>
+                        <li class="header__mobile-item">
+                            <a class="header__mobile-link" href="@@webRoot/pages/about.html">About Us</a>
+                        </li>
+                        <li class="header__mobile-item">
+                            <a class="header__mobile-link" href="@@webRoot/pages/services.html">Services</a>
+                        </li>
+                        <li class="header__mobile-item">
+                            <a class="header__mobile-link" href="@@webRoot/pages/project.html">Project</a>
+                        </li>
+                        <li class="header__mobile-item">
+                            <a class="header__mobile-link" href="@@webRoot/pages/blog.html">Blog</a>
+                        </li>
+                        <li class="header__mobile-item">
+                            <a class="header__mobile-link" href="@@webRoot/pages/contact.html">Contact</a>
                         </li>
                     </ul>
                 </nav>

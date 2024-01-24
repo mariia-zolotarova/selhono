@@ -9,6 +9,11 @@ body {
 .container {
     max-width: 1200rem;
     margin: 0 auto;
+
+    @media (max-width: $tablet) {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
 }
 
 .logo {

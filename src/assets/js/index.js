@@ -1,13 +1,17 @@
 
 
-document.querySelector('#btn1').onclick = () => {
-    document.querySelector('.home-page__modal-container').classList.add('is-visible')
-}
+function toggleMenu() {
+    var hamburger = document.querySelector('.header__hamburger');
+    hamburger.classList.toggle('active');
 
-document.querySelector('.home-page__modal-close').onclick = () => {
-    document.querySelector('.home-page__modal-container').classList.remove('is-visible')
-}
+    var mobileMenu = document.getElementById("mobile-menu");
 
+    if (mobileMenu.style.display === "block") {
+        mobileMenu.style.display = "none";
+    } else {
+        mobileMenu.style.display = "block";
+    }
+}
 
 
 
