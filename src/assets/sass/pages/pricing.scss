@@ -9,6 +9,11 @@
         gap: 48rem;
         justify-content: center;
         margin-bottom: 150rem;
+
+        @media (max-width: $tablet) {
+            flex-direction: column;
+            margin-bottom: 50rem;
+        }
     }
 
     &__box {

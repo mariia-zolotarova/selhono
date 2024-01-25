@@ -11,6 +11,12 @@
         width: 100%;
         justify-content: center;
         margin-bottom: 200rem;
+
+        @media (max-width: $tablet) {
+            flex-direction: column;
+            margin-bottom: 50rem;
+        }
+
     }
 
     &__member {
@@ -18,9 +24,20 @@
         flex-direction: column;
         width: 20%;
 
+        @media (max-width: $tablet) {
+            width: 95%;
+            margin-bottom: 20rem;
+        }
+
+
         &:nth-child(1) {
             margin-bottom: 50rem;
+
+            @media (max-width: $tablet) {
+                margin-bottom: 0;
+            }
         }
+
     }
 
     &__member-img {
