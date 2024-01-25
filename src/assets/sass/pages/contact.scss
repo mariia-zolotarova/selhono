@@ -8,6 +8,11 @@
         flex-direction: column;
         gap: 80rem;
         margin-bottom: 139rem;
+
+        @media (max-width: $tablet) {
+            margin-bottom: 50rem;
+            gap: 40rem;
+        }
     }
 
     &__title {
@@ -20,6 +25,11 @@
         font: var(--testimonial-title-font);
         max-width: 683rem;
         text-align: center;
+
+        @media (max-width: $tablet) {
+            width: 100%;
+            font: var(--blog-quotes-text-font);
+        }
     }
 
     &__text {
@@ -33,6 +43,10 @@
         gap: 50rem;
         width: 100%;
         align-items: center;
+
+        @media (max-width: $tablet) {
+            flex-direction: column;
+        }
     }
 
     &__details {
@@ -43,6 +57,11 @@
         border-radius: 50px;
         max-width: 349rem;
         width: 30%;
+
+        @media (max-width: $tablet) {
+            padding: 40rem 20rem;
+            width: 100%;
+        }
     }
 
     &__details-row {
@@ -76,5 +95,10 @@
         filter: grayscale(90%);
         border-radius: 50rem;
         margin-bottom: 200rem;
+
+        @media (max-width: $tablet) {
+            width: 100%;
+            margin-bottom: 50rem;
+        }
     }
 }
