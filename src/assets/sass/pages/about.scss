@@ -34,8 +34,7 @@
         color: var(--color-dark-grey-29);
 
         @media (max-width: $tablet) {
-            color: var(--color-dark-grey-4D5);
-
+            display: none;
         }
     }
 
@@ -51,6 +50,16 @@
             color: var(--color-biegeCD);
             padding: 0 10rem 10rem 10rem;
             font: var(--blog-quotes-text-font);
+
+            &::before {
+                content: "'' ";
+                color: var(--color-dark-grey-29);
+            }
+
+            &::after {
+                content: " ''";
+                color: var(--color-dark-grey-29);
+            }
         }
     }
 

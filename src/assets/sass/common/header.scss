@@ -3,6 +3,10 @@
     padding-top: 54rem;
     padding-bottom: 66rem;
 
+    @media (max-width: $tablet) {
+        padding-top: 10rem;
+    }
+
     &__container {
         display: flex;
         justify-content: space-between;

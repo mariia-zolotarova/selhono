@@ -6,6 +6,10 @@
     display: flex;
     justify-content: space-between;
     gap: 57rem;
+
+    @media (max-width: $tablet) {
+        justify-content: center;
+    }
 }
 
 .construction,
@@ -15,6 +19,10 @@
 
 .construction {
     max-width: 800rem;
+
+    @media (max-width: $tablet) {
+        width: 100%;
+    }
 }
 
 
@@ -22,6 +30,10 @@
 
 .sidebar {
     max-width: 345rem;
+
+    @media (max-width: $tablet) {
+        display: none;
+    }
 
     &__search {
         display: flex;
@@ -154,12 +166,21 @@
             color: var(--color-dark-grey-29);
             font: var(--follow-title-font);
             margin-bottom: 10rem;
+
+            @media (max-width: $tablet) {
+                font: var(--blog-quotes-text-font);
+            }
         }
     }
 
     &__img {
         max-width: 800rem;
         margin-bottom: 46rem;
+
+        @media (max-width: $tablet) {
+            width: 100%;
+            margin-bottom: 30rem;
+        }
     }
 
     &__date {
@@ -169,6 +190,11 @@
         color: var(--color-dark-grey-4D5);
         font: var(--blog-text-font);
         margin-bottom: 48rem;
+
+        @media (max-width: $tablet) {
+            flex-direction: column;
+            margin-bottom: 30rem;
+        }
     }
 
     &__text {
@@ -192,6 +218,12 @@
         align-items: center;
         margin-bottom: 27rem;
 
+        @media (max-width: $tablet) {
+            padding: 10rem;
+
+
+        }
+
 
         &-item {
             font: var(--blog-quotes-font);
@@ -202,6 +234,10 @@
             rotate: 180deg;
             width: 101px;
             height: 104px;
+
+            @media (max-width: $tablet) {
+                display: none;
+            }
         }
 
         &-text {
@@ -210,6 +246,17 @@
             font-style: italic;
             line-height: 125%;
             letter-spacing: 0.5px;
+
+            @media (max-width: $tablet) {
+                &::before {
+                    content: "''";
+                }
+
+                &::after {
+                    content: "''";
+                }
+            }
+
         }
     }
 
@@ -236,11 +283,23 @@
         flex-direction: row;
         width: 100%;
         justify-content: space-between;
+
+        @media (max-width: $tablet) {
+            flex-direction: column;
+            gap: 20rem;
+            align-items: center;
+        }
     }
 
     &__tags {
         display: flex;
         flex-direction: row;
+
+        @media (max-width: $tablet) {
+            flex-direction: column;
+            gap: 20rem;
+            text-align: center;
+        }
     }
 
     &__icons {
@@ -279,5 +338,9 @@
     &__button {
         margin-top: 63rem;
         margin-bottom: 200rem;
+
+        @media (max-width: $tablet) {
+            margin-bottom: 50rem;
+        }
     }
 }

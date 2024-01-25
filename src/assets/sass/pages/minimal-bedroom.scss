@@ -9,6 +9,11 @@
         gap: 42rem;
         margin-bottom: 100rem;
         align-items: center;
+
+        @media (max-width: $tablet) {
+            flex-direction: column;
+            margin-bottom: 50rem;
+        }
     }
 
     &__details {
@@ -21,12 +26,20 @@
         margin-top: 29rem;
         margin-bottom: 29rem;
 
+        @media (max-width: $tablet) {
+            padding: 30rem 20rem;
+            margin-bottom: 20rem;
+            gap: 20rem;
+        }
+
     }
 
     &__titles {
         display: flex;
         flex-direction: column;
         gap: 15rem;
+        color: var(--color-dark-grey-29);
+        font: var(--bedroom-titles-font);
     }
 
     &__categories {
@@ -54,4 +67,9 @@
 .bedroom-image__container {
     max-width: 1200rem;
     margin-bottom: 200rem;
+
+    @media (max-width: $tablet) {
+        width: 90%;
+    }
+
 }
