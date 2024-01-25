@@ -13,15 +13,30 @@
         margin-bottom: 200rem;
         align-items: center;
         text-align: center;
+
+        @media (max-width: $tablet) {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 100rem;
+        }
     }
 
     &__pattern {
         position: absolute;
+
+        @media (max-width: $tablet) {
+            display: none;
+        }
     }
 
     &__title {
         font: var(--counter-number-font);
         color: var(--color-dark-grey-29);
+
+        @media (max-width: $tablet) {
+            color: var(--color-dark-grey-4D5);
+
+        }
     }
 
     &__text {
@@ -31,6 +46,12 @@
         line-height: 125%;
         letter-spacing: 0.7px;
         padding: 27rem 62rem 34rem 62rem;
+
+        @media (max-width: $tablet) {
+            color: var(--color-biegeCD);
+            padding: 0 10rem 10rem 10rem;
+            font: var(--blog-quotes-text-font);
+        }
     }
 
     &__author {
@@ -45,16 +66,37 @@
         flex-direction: row;
         margin-bottom: 150rem;
         gap: 41rem;
+
+        @media (max-width: $tablet) {
+            flex-direction: column;
+            margin-bottom: 50rem;
+            position: relative;
+        }
     }
 
     &__content {
         max-width: 500rem;
+
+        @media (max-width: $tablet) {
+            padding-top: 65%;
+        }
+    }
+
+    &__image {
+        @media (max-width: $tablet) {
+            position: absolute;
+            width: 100%;
+        }
     }
 
     &__title {
         font: var(--follow-title-font);
         color: var(--color-dark-grey-29);
         margin-bottom: 23rem;
+
+        @media (max-width: $tablet) {
+            font: var(--blog-quotes-text-font);
+        }
     }
 
     &__text {
@@ -71,6 +113,7 @@
         gap: 90rem;
         margin-bottom: 173rem;
 
+
         @media (max-width: $tablet) {
             flex-direction: column;
             gap: 30rem;
@@ -86,6 +129,10 @@
         font: var(--follow-title-font);
         color: var(--color-dark-grey-29);
         margin-bottom: 23rem;
+
+        @media (max-width: $tablet) {
+            font: var(--blog-quotes-text-font);
+        }
     }
 
     &__text {
@@ -100,6 +147,11 @@
     padding: 185rem 360rem;
     margin-bottom: 213rem;
 
+    @media (max-width: $tablet) {
+        padding: 10rem 0;
+        margin-bottom: 50rem;
+    }
+
     &__container {
         display: flex;
         flex-direction: column;
@@ -112,12 +164,20 @@
         margin-bottom: 40rem;
         font: var(--follow-title-font);
         max-width: 547rem;
+
+        @media (max-width: $tablet) {
+            font: var(--blog-quotes-text-font);
+        }
     }
 
     &__people {
         display: flex;
         flex-direction: row;
         gap: 22rem;
+
+        @media (max-width: $tablet) {
+            flex-direction: column;
+        }
     }
 
     &__flip-img {
@@ -201,6 +261,10 @@
         font: var(--follow-title-font);
         text-align: center;
         margin-bottom: 77rem;
+
+        @media (max-width: $tablet) {
+            font: var(--blog-quotes-text-font);
+        }
     }
 
     &__container {
@@ -208,6 +272,10 @@
         flex-direction: column;
         align-items: center;
         padding: 0 202rem 135rem 202rem;
+
+        @media (max-width: $tablet) {
+            padding: 10rem;
+        }
     }
 
     &__form {
@@ -221,6 +289,10 @@
             gap: 40rem;
             width: 100%;
             margin-bottom: 57rem;
+
+            @media (max-width: $tablet) {
+                flex-direction: column;
+            }
         }
     }
 
@@ -229,6 +301,10 @@
     &__site,
     &__phone {
         width: 50%;
+
+        @media (max-width: $tablet) {
+            width: 100%;
+        }
     }
 
     &__text ::placeholder {

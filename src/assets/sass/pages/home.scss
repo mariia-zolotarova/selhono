@@ -526,6 +526,10 @@
     &__title {
         font: var(--follow-title-font);
         margin-bottom: 11rem;
+
+        @media (max-width: $tablet) {
+            font: var(--blog-quotes-text-font);
+        }
     }
 
     &__text {

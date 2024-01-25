@@ -9,10 +9,19 @@
         flex-direction: row;
         flex-wrap: wrap;
         margin-bottom: 112rem;
+
+        @media (max-width: $tablet) {
+            flex-direction: column;
+            margin-bottom: 50rem;
+        }
     }
 
     &__item {
         width: 33%;
+
+        @media (max-width: $tablet) {
+            width: 90%;
+        }
     }
 
     &__card {
@@ -21,6 +30,11 @@
         padding: 83rem 21rem;
         text-align: center;
         margin-bottom: 88rem;
+
+        @media (max-width: $tablet) {
+            padding: 20rem;
+            margin-bottom: 40rem;
+        }
 
         &:hover {
             background-color: var(--color-light-grey-F4);
@@ -59,15 +73,27 @@
         background-color: var(--color-light-grey-F4);
         border-radius: 70rem;
         margin-bottom: 200rem;
+
+        @media (max-width: $tablet) {
+            margin-bottom: 50rem;
+        }
     }
 
     &__heading {
         text-align: center;
         padding: 160rem 198rem 100rem 198rem;
 
+        @media (max-width: $tablet) {
+            padding: 50rem 20rem;
+        }
+
         &-title {
             font: var(--testimonial-title-font);
             color: var(--color-dark-grey-29);
+
+            @media (max-width: $tablet) {
+                font: var(--blog-quotes-text-font);
+            }
         }
 
         &-text {
@@ -83,21 +109,43 @@
         gap: 51rem;
         padding: 0 116rem 70rem 116rem;
 
+        @media (max-width: $tablet) {
+            flex-direction: column;
+            padding: 10rem;
+        }
+
         &:last-child {
             padding-bottom: 160rem;
+
+            @media (max-width: $tablet) {
+                padding-bottom: 50rem;
+            }
         }
 
         &-img {
             width: 50%;
+
+            @media (max-width: $tablet) {
+                // width: 100%;
+                display: none;
+            }
         }
     }
 
     &__content {
         width: 50%;
 
+        @media (max-width: $tablet) {
+            width: 100%;
+        }
+
         &-title {
             font: var(--about-text-font);
             color: var(--color-dark-grey-29);
+
+            @media (max-width: $tablet) {
+                font: var(--blog-quotes-text-font);
+            }
         }
 
         &-text {
