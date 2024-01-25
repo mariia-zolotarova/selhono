@@ -5,10 +5,21 @@
         gap: 97rem;
         width: 100%;
         margin-bottom: 150rem;
+
+        @media (max-width: $tablet) {
+            flex-direction: column;
+            margin-bottom: 50rem;
+            gap: 30rem;
+        }
     }
 
     &__title {
         width: 40%;
+
+        @media (max-width: $tablet) {
+            width: 95%;
+            text-align: center;
+        }
 
         &-item {
             font: var(--follow-title-font);
@@ -21,6 +32,11 @@
         flex-direction: column;
         width: 60%;
         gap: 28rem;
+
+        @media (max-width: $tablet) {
+            width: 95%;
+            text-align: center;
+        }
 
         &-paragraph {
             font: var(--follow-text-font);
@@ -37,6 +53,10 @@
     &__container {
         max-width: 1200rem;
         margin-bottom: 150rem;
+
+        @media (max-width: $tablet) {
+            margin-bottom: 50rem;
+        }
     }
 }
 
@@ -48,11 +68,21 @@
         justify-content: center;
         position: relative;
         margin-bottom: 150rem;
+
+        @media (max-width: $tablet) {
+            flex-direction: column;
+            margin-bottom: 50rem;
+        }
     }
 
     &__interior {
 
         margin-right: 83rem;
+
+        @media (max-width: $tablet) {
+            margin-right: 0;
+            // text-align: center;
+        }
 
         &::before {
             content: "";
@@ -62,11 +92,20 @@
             height: 249rem;
             width: 50%;
             border-right: 1px solid var(--color-light-grey-CE);
+
+            @media (max-width: $tablet) {
+                display: none;
+            }
         }
     }
 
     &__art {
         margin-left: 83rem;
+
+        @media (max-width: $tablet) {
+            margin-left: 0;
+            // text-align: center;
+        }
     }
 
     &__interior-title {

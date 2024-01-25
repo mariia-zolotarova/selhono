@@ -70,6 +70,12 @@
         flex-direction: row;
         gap: 90rem;
         margin-bottom: 173rem;
+
+        @media (max-width: $tablet) {
+            flex-direction: column;
+            gap: 30rem;
+            margin-bottom: 50rem;
+        }
     }
 
     &__content {
