@@ -1,4 +1,5 @@
 .footer {
+
     &__container {
         display: flex;
         flex-direction: row;
@@ -72,11 +73,21 @@
 }
 
 .bottom {
+
+
     &__text {
         margin-top: 138rem;
         display: flex;
         justify-content: center;
         color: var(--color-dark-grey-4D5);
+        text-align: center;
+
+
+        @media (max-width: $tablet) {
+            margin-top: 20rem;
+            font: var(--blog-text-font);
+            text-align: center;
+        }
     }
 
 }

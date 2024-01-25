@@ -16,6 +16,12 @@
         border: 1rem solid var(--color-biegeCD);
         border-radius: 18rem;
 
+        @media (max-width: $tablet) {
+            flex-direction: column;
+            gap: 10rem;
+            margin-bottom: 50rem;
+            width: 100%;
+        }
     }
 
     &__link {
@@ -23,6 +29,10 @@
             padding: 26rem 0 26rem 66rem;
             color: var(--color-dark-grey-29);
             font: var(--services-more-font);
+
+            @media (max-width: $tablet) {
+                padding: 10rem 50rem;
+            }
         }
 
         &:nth-child(2) {
@@ -32,12 +42,20 @@
             color: var(--color-white);
             font: var(--services-more-font);
 
+            @media (max-width: $tablet) {
+                padding: 10rem 50rem;
+            }
+
         }
 
         &:nth-child(3) {
             padding: 26rem 0;
             color: var(--color-dark-grey-29);
             font: var(--services-more-font);
+
+            @media (max-width: $tablet) {
+                padding: 10rem 50rem;
+            }
         }
 
         &:last-child {
@@ -45,28 +63,35 @@
             color: var(--color-dark-grey-29);
             font: var(--services-more-font);
 
+            @media (max-width: $tablet) {
+                padding: 10rem 50rem;
+            }
         }
     }
 }
 
 .grid__container {
     padding-bottom: 200rem;
+
+    @media (max-width: $tablet) {
+        padding-bottom: 50rem;
+    }
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 35px 35px;
     grid-auto-flow: row;
-    grid-template-areas:
-        "grid__bedroom-first grid__bedroom-second"
-        "grid__bedroom-first grid__bedroom-second"
-        "grid__bedroom-first grid__bedroom-fourth"
-        "grid__bedroom-thrid grid__bedroom-fourth"
-        "grid__bedroom-thrid grid__bedroom-fourth"
-        "grid__bedroom-fifth grid__bedroom-sixth"
-        "grid__bedroom-fifth grid__bedroom-sixth"
-        "grid__bedroom-fifth grid__bedroom-eighth"
-        "grid__bedroom-seventh grid__bedroom-eighth"
-        "grid__bedroom-seventh .";
+    grid-template-areas: "grid__bedroom-first grid__bedroom-second"
+    "grid__bedroom-first grid__bedroom-second"
+    "grid__bedroom-first grid__bedroom-fourth"
+    "grid__bedroom-thrid grid__bedroom-fourth"
+    "grid__bedroom-thrid grid__bedroom-fourth"
+    "grid__bedroom-fifth grid__bedroom-sixth"
+    "grid__bedroom-fifth grid__bedroom-sixth"
+    "grid__bedroom-fifth grid__bedroom-eighth"
+    "grid__bedroom-seventh grid__bedroom-eighth"
+    "grid__bedroom-seventh .";
 }
 
 .grid__bedroom-first {
@@ -117,10 +142,19 @@
     &-title {
         color: var(--color-dark-grey-29);
         font: var(--home-title-font);
+
+        @media (max-width: $tablet) {
+            font: var(--testimonial-place-font);
+        }
+
     }
 
     &-text {
         color: var(--color-dark-grey-4D5);
         font: var(--home-text-font);
+
+        @media (max-width: $tablet) {
+            font: var(--blog-text-font);
+        }
     }
 }
