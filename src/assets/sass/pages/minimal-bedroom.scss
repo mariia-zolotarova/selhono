@@ -27,6 +27,18 @@
         margin-bottom: 29rem;
 
         @media (max-width: $tablet) {
+            padding: 30rem 100rem;
+            margin-bottom: 20rem;
+            gap: 200rem;
+        }
+
+        @media (max-width: $tablet768) {
+            padding: 30rem 100rem;
+            margin-bottom: 20rem;
+            gap: 100rem;
+        }
+
+        @media (max-width: $mobile600) {
             padding: 30rem 20rem;
             margin-bottom: 20rem;
             gap: 20rem;
@@ -70,6 +82,7 @@
 
     @media (max-width: $tablet) {
         width: 90%;
+        margin-bottom: 50rem;
     }
 
 }

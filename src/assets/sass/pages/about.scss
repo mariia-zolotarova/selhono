@@ -156,7 +156,15 @@
     padding: 185rem 360rem;
     margin-bottom: 213rem;
 
+    @media (max-width: $desctop1200) {
+        padding: 50rem 200rem;
+    }
+
     @media (max-width: $tablet) {
+        padding: 50rem 100rem;
+    }
+
+    @media (max-width: $tablet768) {
         padding: 10rem 0;
         margin-bottom: 50rem;
     }
@@ -165,6 +173,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+
     }
 
     &__title {
@@ -184,7 +194,12 @@
         flex-direction: row;
         gap: 22rem;
 
-        @media (max-width: $tablet) {
+        @media (max-width: $desctop1200) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        @media (max-width: $tablet768) {
             flex-direction: column;
         }
     }

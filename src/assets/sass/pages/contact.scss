@@ -62,6 +62,7 @@
             padding: 40rem 20rem;
             width: 100%;
         }
+
     }
 
     &__details-row {
@@ -87,6 +88,10 @@
         margin-top: 58rem;
         display: flex;
         justify-content: flex-end;
+
+        @media (max-width: $tablet) {
+            justify-content: center;
+        }
     }
 }
 
@@ -96,9 +101,10 @@
         border-radius: 50rem;
         margin-bottom: 200rem;
 
-        @media (max-width: $tablet) {
+        @media (max-width: $desctop1200) {
             width: 100%;
             margin-bottom: 50rem;
+            padding: 0 10rem 0 10rem;
         }
     }
 }

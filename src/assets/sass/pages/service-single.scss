@@ -72,6 +72,8 @@
         @media (max-width: $tablet) {
             flex-direction: column;
             margin-bottom: 50rem;
+            align-items: center;
+            gap: 50rem;
         }
     }
 

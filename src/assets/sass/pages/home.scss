@@ -113,7 +113,15 @@
 
         // max-width: 1210rem;
         // height: 700rem;
-        @media (max-width: $tablet) {
+        @media (max-width: 989px) {
+            margin-top: 80%;
+        }
+
+        @media (max-width: 859px) {
+            margin-top: 90%;
+        }
+
+        @media (max-width: $tablet768) {
             margin-top: 100%;
         }
     }
@@ -411,6 +419,16 @@
     padding: 151rem 419rem;
     margin-bottom: 200rem;
 
+    @media (max-width: 14670px) {
+        padding: 151rem 219rem;
+        margin-bottom: 200rem;
+    }
+
+    @media (max-width: $desctop1200) {
+        padding: 50rem 50rem;
+        margin-bottom: 50rem;
+    }
+
     @media (max-width: $tablet) {
         padding: 50rem 0;
         margin-bottom: 50rem;
@@ -465,6 +483,10 @@
         gap: 27rem;
         flex-wrap: wrap;
         margin-bottom: 200rem;
+
+        @media (max-width: $desctop1200) {
+            justify-content: center;
+        }
 
         @media (max-width: $tablet) {
             justify-content: center;
