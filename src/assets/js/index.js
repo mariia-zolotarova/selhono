@@ -65,38 +65,38 @@ function toggleMenu() {
 // });
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    var animatedElements = document.querySelectorAll('.animate__animated');
-    var scrollTimeout;
+// document.addEventListener('DOMContentLoaded', function () {
+//     var animatedElements = document.querySelectorAll('.animate__animated');
+//     var scrollTimeout;
 
-    function debounce(func, delay) {
-        clearTimeout(scrollTimeout);
-        scrollTimeout = setTimeout(func, delay);
-    }
+//     function debounce(func, delay) {
+//         clearTimeout(scrollTimeout);
+//         scrollTimeout = setTimeout(func, delay);
+//     }
 
-    function animateOnScroll() {
-        animatedElements.forEach(function (element) {
-            var bounding = element.getBoundingClientRect();
-            var isInViewport = (
-                bounding.top >= 0 &&
-                bounding.left >= 0 &&
-                bounding.right <= (window.innerWidth || document.documentElement.clientWidth) &&
-                bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
-            );
+//     function animateOnScroll() {
+//         animatedElements.forEach(function (element) {
+//             var bounding = element.getBoundingClientRect();
+//             var isInViewport = (
+//                 bounding.top >= 0 &&
+//                 bounding.left >= 0 &&
+//                 bounding.right <= (window.innerWidth || document.documentElement.clientWidth) &&
+//                 bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+//             );
 
-            if (isInViewport) {
-                element.classList.add('animate__backInLeft'); // Add desired animation class
-            } else {
-                element.classList.remove('animate__fadeInUp'); // Remove animation class if element is out of viewport
-            }
-        });
-    }
+//             if (isInViewport) {
+//                 element.classList.add('animate__backInLeft'); // Add desired animation class
+//             } else {
+//                 element.classList.remove('animate__fadeInUp'); // Remove animation class if element is out of viewport
+//             }
+//         });
+//     }
 
-    // Initial animation check
-    animateOnScroll();
+//     // Initial animation check
+//     animateOnScroll();
 
-    // Listen for debounced scroll events
-    window.addEventListener('scroll', function () {
-        debounce(animateOnScroll, 50); // Adjust debounce delay as needed
-    });
-});
+//     // Listen for debounced scroll events
+//     window.addEventListener('scroll', function () {
+//         debounce(animateOnScroll, 50); // Adjust debounce delay as needed
+//     });
+// });
